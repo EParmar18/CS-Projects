@@ -12,6 +12,7 @@
 //      Note that the BinaryNode class alone is enough to implement a binary
 // tree, if we don't want a separate level of abstraction for the tree class.
 // This is demonstrated in Example12.java
+
 /**
    A class that represents nodes in a binary tree.
    
@@ -205,4 +206,3 @@ public class BinaryNode<T>
 		}
 	}
 } // end BinaryNode
-
