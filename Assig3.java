@@ -156,6 +156,7 @@ public class Assig3
 		System.out.println(s5 + " found last at " + i5);
 		System.out.println();
 		
+		
 		// Testing regMatch method.
 		// This first match is discussed in the Assignment 3
 		// specifications.
@@ -193,7 +194,9 @@ public class Assig3
 		testMatch(b3, pat6);
 		testMatch(b2, pat6);
 		testMatch(b1, pat7);
+		
 	}
+	
 	
 	public static void testMatch(MyStringBuilder2 target, String [] pat)
 	{
@@ -214,4 +217,5 @@ public class Assig3
 			System.out.println("No match found!");
 		System.out.println();
 	}
+	
 }
